@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  background-color: #F9ADEA;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  display:inline-block;
+  align-items: center;
+  height: 15em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  flex-direction: column;
+  
+}
+.img{
+  height: 12em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.textbox {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000; 
+  font-size: 40px;
+  padding: 10px; 
+ 
+}
+.scrollableContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border: none;
+  scrollbar-width: thick; /* Per Firefox */
+  scrollbar-color: black transparent; /* Per Firefox */
+}
+
+/* Per i browser WebKit (Chrome, Safari, ecc.) */
+.scrollableContainer::-webkit-scrollbar {
+  width: 16px; /* Larghezza della scrollbar */
+}
+
+.scrollableContainer::-webkit-scrollbar-thumb {
+  background-color: black; /* Colore della scrollbar */
+  border-radius: 4px; /* Bordo arrotondato */
+}
+
+.submitButton{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000; 
+  
+  padding: 10px; 
+}
+.search-icon {
+  width: 38px; /* Dimensione dell'icona, puoi personalizzare secondo le tue esigenze */
+  height: 38px;
+  margin-left: -30px; /* Margine sinistro negativo per sovrapporre all'icona il testo del textbox */
+  position: relative;
+  cursor: pointer;
+}
